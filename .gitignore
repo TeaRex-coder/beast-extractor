@@ -1,0 +1,19 @@
+# Python
+.venv
+__pycache__/
+
+# Project files
+Data.zip
+output.zip
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+__MACOSX
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
