@@ -2,7 +2,7 @@
 
 This project aids macOS BEAST players extract game assets. A local copy of the user's `/Applications/BEAST.app/Contents/Resources/Data` directory is uploaded to the server and returned as a ZIP archive of organized assets. The directory does not contain any sensitive user data and is not kept by the server. _You can check the code yourself, or self-host, it's open-source :)_
 
-The official version is hosted here: [website.extension](https://website)
+~~The official version is hosted here: [website.extension](https://website)~~
 
 ## How it Works
 
@@ -10,7 +10,7 @@ Three primary asset types are handled:
 
 ### Protocol Buffers
 
-The `StreamingAssets/Data` & `StreamingAssets/UI` directories each contain protobd and protobw files respectively. They are decompiled into human-readable proto files using [protoc](https://github.com/protocolbuffers/protobuf), the Protobuf Compiler.
+The `StreamingAssets/Data` & `StreamingAssets/UI` directories each contain protobd and protobw files, respectively. They are decompiled into human-readable proto files using [protoc](https://github.com/protocolbuffers/protobuf), the Protobuf Compiler.
 
 ```sh
 protoc --deocde_raw < file.protobd > file.proto
@@ -41,8 +41,6 @@ AssetStudioModCLI file -t [assetType] -o [output directory] --log-level error
 
 ## Server Set Up
 
-Ansible Playbook WIP
-
 ### Protocol Buffers
 
 - Install [protoc](https://github.com/protocolbuffers/protobuf/releases)
@@ -61,8 +59,8 @@ Ansible Playbook WIP
 
 ## Disclaimer
 
-This repository is a fan project and is not affiliated with or endorsed by BEAST's original creators. This project does not re-distribute game assets, simply aiding players extract game assets from the macOS Apple Arcade version through a valid Apple Arcade Subscription.
+This repository is a fan project and is not affiliated with or endorsed by BEAST's original creators. This project does not redistribute game assets, simply aiding players extract game assets from the macOS Apple Arcade version through a valid Apple Arcade Subscription.
 
-All rights to the original game content, including but not limited too Protocol Buffers, textures, fonts, meshes and audio files, are owned by Oh BiBi. This project is primarily intended for archival purposes, not to infringe on copyright.
+All rights to the original game content, including but not limited to Protocol Buffers, textures, fonts, meshes and audio files, are owned by Oh BiBi. This project is primarily intended for archival purposes, not to infringe on copyright.
 
-If you are the copyright holder and believe this project violates your rights, please contact email me at [alexandre@boutoille.com](mailto:alexandre@boutoille.com).
+If you are the copyright holder and believe this project violates your rights, please contact me at [alexandre@boutoille.com](mailto:alexandre@boutoille.com).
